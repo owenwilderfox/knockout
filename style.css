@@ -2,7 +2,7 @@ html {
     background: repeating-linear-gradient(
         to right,
         #f6ba52,
-        #f6ba52 10px,
+        #F7CB15 10px,
         #ffd180 10px,
         #ffd180 20px
       );
@@ -13,5 +13,5 @@ html {
     margin: auto;
     width: 50%;
     border-radius: 25px;
-    padding: 10px;
+    padding: 20px;
 }

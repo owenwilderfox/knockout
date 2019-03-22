@@ -23,7 +23,11 @@
                   <input data-bind = 'value: taskToAdd, valueUpdate: "afterkeydown"'/>
                   <button type = "submit" data-bind = "enable: taskToAdd().length > 0">Add</button>
                   <p><b>Your tasks for today:</b></p>
-                  <select multiple = "multiple" width = "50" data-bind = "options: tasks"> </select>
+                  <ul data-bind = "foreach: {data: tasks, as: 'task'}">
+                      <li>
+                          <span data-bind = "text: task"></span>
+                      </li>
+                  </ul>
                </form>
             </div>
             
